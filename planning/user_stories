@@ -1,0 +1,22 @@
+Bronze
+
+As a user, I want to:
+
+see a welcome page with a description of the app
+be able to choose from a list of foods
+see the available types of wine (red/white/…etc.) based on food chosen
+I want to be able to create a ratings or review on food/wine pairing
+I want to be able to edit/delete a review
+
+
+
+Silver
+filter wine options by price, to stay within budget
+click on a wine and see where it can be purchased
+
+
+Gold
+
+to sign in
+save wine pairing options
+add food
