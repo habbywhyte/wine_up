@@ -1,9 +1,5 @@
 "use strict";
 
-var dummy = [
-  {name: "hot dog", photo_url: "dog_photo"},
-  {name: "burger", photo_url: "burger_pic"}
-];
 
 
 (function(){
@@ -24,8 +20,8 @@ var dummy = [
     .state("foodHome", {
       url: '/foods',
       templateUrl: "app/foods/foods.html",
-      // controller: "FoodIndexController",
-      // controllerAs: "showVm"
+      controller: "FoodIndexController",
+      controllerAs: "showVm"
     })
 
 
