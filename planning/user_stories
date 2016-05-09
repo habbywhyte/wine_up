@@ -1,13 +1,12 @@
 Bronze
 
-As a user, I want to:
+As a user, I want to
 
 see a welcome page with a description of the app
-<<<<<<< HEAD
-be able to choose from a list of foods 
-=======
+
 be able to choose from a list of foods
->>>>>>> 90393eed0149ae1597646aafb9ba971e639e3681
+
+be able to choose from a list of foods
 see the available types of wine (red/white/…etc.) based on food chosen
 I want to be able to create a ratings or review on food/wine pairing
 I want to be able to edit/delete a review
