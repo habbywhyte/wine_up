@@ -5,7 +5,7 @@
   .module("food", ["ui.router"])
   .config(["$stateProvider", RouterFunction])
 
-  .controller("FoodHomeController", FoodHomeControllerFunc);
+  .controller("FoodIndexController", FoodIndexControllerFunc);
 
   function RouterFunction($stateProvider){
     $stateProvider
@@ -13,6 +13,13 @@
       url: '/',
       templateUrl: "js/foods/home.html",
     })
+
+    .state("foodIndex", {
+      url: "/foods",
+      templateUrl: "js/foods/index.html",
+      controller: "FoodIndexController",
+      controllerAs: "indexVm"})
+
   }
 
 
