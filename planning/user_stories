@@ -3,20 +3,21 @@ Bronze
 As a user, I want to:
 
 see a welcome page with a description of the app
+have a nav bar with a link to the foods list
+see a page with a list of foods
 be able to choose from a list of foods
 see the available types of wine (red/white/…etc.) based on food chosen
-I want to be able to create a ratings or review on food/wine pairing
-I want to be able to edit/delete a review
 
 
 
 Silver
 filter wine options by price, to stay within budget
-click on a wine and see where it can be purchased
+I want to be able to create a ratings or review on food/wine pairing
+I want to be able to edit/delete a review
 
 
 Gold
-
+click on a wine and see where it can be purchased
 to sign in
 save wine pairing options
 add food

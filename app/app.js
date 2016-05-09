@@ -5,21 +5,28 @@
   .module("food", ["ui.router"])
   .config(["$stateProvider", RouterFunction])
 
-  .controller("FoodIndexController", FoodIndexControllerFunc);
-
+  //
+  // .controller("FoodIndexController", FoodIndexControllerFunc);
+  //
   function RouterFunction($stateProvider){
     $stateProvider
-    .state("foodHome", {
-      url: '/',
-      templateUrl: "js/foods/home.html",
+    .state("welcome", {
+      url: "/",
+      templateUrl: "app/welcome.html"
     })
 
-    .state("foodIndex", {
-      url: "/foods",
-      templateUrl: "js/foods/index.html",
-      controller: "FoodIndexController",
-      controllerAs: "indexVm"})
+    .state("foodHome", {
+      url: '/foods',
+      templateUrl: "app/foods/foods.html",
+    })
 
+  //
+  //   .state("foodIndex", {
+  //     url: "/foods",
+  //     templateUrl: "js/foods/index.html",
+  //     controller: "FoodIndexController",
+  //     controllerAs: "indexVm"})
+  //
   }
 
 
