@@ -11,7 +11,7 @@
     $stateProvider
     .state("foodHome", {
       url: '/',
-      templateUrl: "js/foods/home.html",
+      templateUrl: "views/static_pages/home.html",
     })
   }
 
