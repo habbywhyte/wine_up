@@ -4,7 +4,7 @@
 
 (function(){
   angular
-  .module("food", ["ui.router"])
+  .module("wine_up", ["ui.router","foods"])
   .config(["$stateProvider", RouterFunction])
 
   //
@@ -12,16 +12,16 @@
   //
   function RouterFunction($stateProvider){
     $stateProvider
-    .state("welcome", {
-      url: "/",
-      templateUrl: "app/welcome.html"
-    })
+    // .state("welcome", {
+    //   url: "/",
+    //   templateUrl: "app/welcome.html"
+    // })
 
     .state("foodHome", {
       url: '/',
       templateUrl: "app/foods/foods.html",
       controller: "FoodIndexController",
-      controllerAs: "showVm"
+      controllerAs: "indexVm"
     })
 
 
