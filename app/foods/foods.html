@@ -1,6 +1,9 @@
 hi foods.html
 {{4*4}}
 
-<li>
-  <ul data-ng-repeat="food in showVm.entries">{{food.name}}</ul>
-</li>
+<ul>
+  <li data-ng-repeat="food in showVm.entries">
+    {{food.name}}
+    <img src="{{food.photo_url}}"/>
+  </li>
+</ul>
