@@ -10,7 +10,11 @@
 
       function ControllerFunction(FoodsFactory) {
         // var indexVm = this;
-        this.foods = FoodsFactory.query();
+        this.foods = FoodsFactory.query()
+
+        this.clicker = function(foodName) {
+          console.log(foodName);
+        };
 
         // indexVm.entries = [
         //   {name: "hot dog", photo_url: "http://fillmurray.com/300/200"},

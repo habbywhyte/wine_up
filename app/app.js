@@ -24,7 +24,12 @@
       controllerAs: "indexVm"
     })
 
-
+    .state("foodShow", {
+      url: '/food/:id',
+      templateUrl: "app/foods/foodshow.html",
+      controller: "FoodShowController",
+      controllerAs: "showVm"
+    })
 
   //
   //   .state("foodIndex", {
