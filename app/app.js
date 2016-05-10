@@ -18,7 +18,7 @@
     })
 
     .state("foodHome", {
-      url: '/foods',
+      url: '/',
       templateUrl: "app/foods/foods.html",
       controller: "FoodIndexController",
       controllerAs: "showVm"
