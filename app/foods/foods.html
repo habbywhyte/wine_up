@@ -5,6 +5,6 @@ hi foods.html
 <ul>
   <li data-ng-repeat="food in indexVm.foods">
     <a data-ui-sref="foodShow({id:food.id})">{{food.name}}</a>
-    <{{food.photo_url}}>
+    <img src="{{food.photo_url}}" />
   </li>
 </ul>
