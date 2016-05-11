@@ -11,6 +11,11 @@ body {
   margin-bottom: 0;
 }
 
+.navbar-right {
+  z-index: 2;
+  color: #ffffff;
+}
+
 .navbar, .navbar div, .navbar-brand, .navbar-header {
      min-height: 60px;
      max-height: 60px;
@@ -72,12 +77,13 @@ section {
 .home-block-text{
   position: relative;
   top: 16.7em;
+  z-index: 2;
 }
 
 div.home-block-text h1 {
 font-family: 'Cinzel Decorative', cursive;
 font-size: 90px;
-color: red;
+color: #b30000;
 }
 
 div.home-block-text h3 {
