@@ -3,7 +3,7 @@
   <head>
      <meta charset="UTF-8">
      <title>Wine Up</title>
-     <link rel="stylesheet" href="css/style.css" />
+     <!-- <link rel="stylesheet" href="css/style.css" /> -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -13,13 +13,75 @@
      <script src="app/foods/food_index.controller.js"></script>
      <script src="app/foods/food_show.controller.js"></script>
      <script src="app/foods/foods.factory.js"></script>
-  </head>
-
+  <!-- </head> -->
+<!--
   <body>
     something here, which is the top of index dot html.
     <div data-ui-view></div>
 
     {{2+2}} at the bottom of index dot html.
-  </body>
+  </body> -->
 
+<!-- <html lang="en"> -->
+<!-- <head> -->
+ <!-- <meta charset="UTF-8"> -->
+ <!-- <title>Wine Up</title> -->
+
+
+ <!-- css file -->
+ <link rel="stylesheet" href="css/style.css" />
+
+<!-- angular and angular route -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script> -->
+
+<!-- bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></script>
+
+<!-- <script src="app/app.js"></script> -->
+
+<!-- <script src="app/foods/foods.module.js"></script> -->
+ <!-- <script src="app/foods/food_index.controller.js"></script> -->
+
+ <!-- <script src="app/foods/foods.factory.js"></script> -->
+</head>
+
+<body>
+<!-- <body data-ng-app='food'> -->
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-inverse nav-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-ui-sref="indexVm">Wine Up</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a data-ui-sref="indexVm">Home</a></li>
+        <li><a data-ui-sref="showVm">Food</a></li>
+    </ul>
+  </nav>
+<!--image header-->
+  <header class="image-bg-fluid-height">
+    <div class="header-block">
+      <p class="header-text">
+        <section>
+          <div class="container">
+            <div class="row">
+              <h1 class="section-heading">Match Your Wine to your Food</h1>
+              <div data-ui-view></div>
+            </div>
+          </div>
+        </section>
+      </p>
+    </div>
+  </header>
+
+    <!-- Content Section -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
 </html>
