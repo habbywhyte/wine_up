@@ -1,3 +1,11 @@
-<a data-ui-sref='indexVm'>All Foods</a>
+<a data-ui-sref='foodHome'>All Foods</a>
 
 <h2>{{showVm.food.name}} was your chosen food.</h2>
+
+<ul>
+  <li data-ng-repeat='winetypes in showVm.winetype'>
+    {{showVm.winetype}}
+  </li>
+</ul>
+
+<!-- <h3>{{showVm.food.winetypes[]}} are good wines.</h3> -->
