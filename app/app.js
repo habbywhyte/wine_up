@@ -1,28 +1,52 @@
 "use strict";
 
-
-
 (function(){
   angular
-  .module("food", ["ui.router"])
-  .config(["$stateProvider", RouterFunction])
+    .module("food", ["ui.router", "ngResource"])
+    .config(["$stateProvider", RouterFunction])
+    .factory("FoodFactory",["$resource", FoodFactoryFunction])
+    .controller("FoodScrollController", ["FoodFactory", FoodScrollControllerFunc]);
 
-  //
-  // .controller("FoodIndexController", FoodIndexControllerFunc);
-  //
+
   function RouterFunction($stateProvider){
     $stateProvider
     .state("welcome", {
       url: "/",
       templateUrl: "app/welcome.html"
     })
-
     .state("foodHome", {
-      url: '/foods',
-      templateUrl: "app/foods/foods.html",
-      controller: "FoodIndexController",
-      controllerAs: "showVm"
-    })
+      views: {
+        'pickFood': {
+          templateUrl: 'foods.html',
+          controller: 'foodScrollController'
+        }
+      }
+    });
+}
+
+    function FoodFactoryFunction($resource){
+      return $resource("http://localhost:3000/foods/:id");
+    }
+
+    function FoodScrollControllerFunc(FoodFactory){
+      var indexVm = this;
+      indexVm.foods = FoodFactory.query();
+    }
+
+    // $('.dropdown-menu').find('input').click(function(e) {
+    //   e.stopPropagation();
+    // });
+
+
+
+  })();
+
+
+      // url: '/foods',
+      // templateUrl: "app/foods/foods.html",
+      // controller: "FoodIndexController",
+      // controllerAs: "showVm"
+
 
 
 
@@ -33,8 +57,4 @@
   //     controller: "FoodIndexController",
   //     controllerAs: "indexVm"})
   //
-  }
-
-
-
-})();
+  // }
