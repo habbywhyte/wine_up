@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <title>Wine Up</title>
+<html data-ng-app="wine_up">
+  <head>
+     <meta charset="UTF-8">
+     <title>Wine Up</title>
 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+
+     <script src="app/app.js"></script>
+     <script src="app/foods/foods.module.js"></script>
+     <script src="app/foods/food_index.controller.js"></script>
+     <script src="app/foods/food_show.controller.js"></script>
+     <script src="app/foods/foods.factory.js"></script>
+  <!-- </head> -->
 
  <!-- css file -->
  <link rel="stylesheet" href="css/style.css" />
  <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900|Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
 
 <!-- angular and angular route -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script> -->
 
 <!-- bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></script>
 
-<script src="app/app.js"></script>
-
-<!-- <script src="app/foods/foods.module.js"></script> -->
- <script src="app/foods/food_index.controller.js"></script>
-
- <!-- <script src="app/foods/foods.factory.js"></script> -->
 </head>
 
 <body data-ng-app='food'>
@@ -30,13 +34,14 @@
   <!-- NAVIGATION -->
   <nav class="navbar navbar-inverse nav-fixed-top" role="navigation">
     <div class="navbar-header">
-        <a class="navbar-brand" style="font-family: 'Cinzel Decorative', cursive; font-size: 30px; color: #8c0000" data-ui-sref="#">Wine Up</a>
+        <a class="navbar-brand" style="font-family: 'Cinzel Decorative', cursive; font-size: 30px; color: #8c0000" data-ui-sref="indexVm">Wine Up</a>
     </div>
     <ul class="nav navbar-nav navbar-right" style="font-family: 'Josefin Sans', sans-serif; font-size: 20px; color: #ffffff; margin-right: 30px">
-        <li><a data-ui-sref="home">Home</a></li>
-        <li><a data-ui-sref="Food">Food</a></li>
+        <li><a data-ui-sref="indexVm">Home</a></li>
+        <li><a data-ui-sref="showVm">Food</a></li>
     </ul>
   </nav>
+
 <!--image header-->
   <header class="image-bg-fluid-height">
     <div class="home-block-text">
@@ -44,24 +49,18 @@
         <h3>The food lover's guide to wine</h3>
     </div>
 
+<!-- Content Section  -->
     <div class="header-block">
-
-        <div data-ui-view='pickFood'></div>
-        <div data-ui-view='wineTable'></div>
+        <section>
+          <div class="container">
+            <div class="row">
+              <h1 class="section-heading">Find the perfect pairing by choosing your food item.</h1>
+              <div data-ui-view></div>
+            </div>
+          </div>
+        </section>
     </div>
   </header>
-
-    <!-- Content Section -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <h1 class="section-heading">Find the perfect pairing by choosing your food item.</h1>
-      </div>
-    </div>
-  </section>
-
-
-  <div data-ui-view></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
