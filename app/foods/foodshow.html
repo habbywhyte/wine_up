@@ -1,3 +1,11 @@
-<a data-ui-sref='indexVm'>Foods</a>
+<a data-ui-sref='foodHome'>Foods</a>
 
-<h2>{{showVm.food.name}}</h2>
+
+<h2> The best wine pairing for {{showVm.food.name}}</h2>
+<div class="wine-display">
+<div data-ng-repeat="typesofwine in showVm.food.winetypes">
+
+  <img ng-src="{{typesofwine.graphic_url}}" alt="" />
+  <h3>{{typesofwine.typeofwine}}</h3>
+</div>
+<div>

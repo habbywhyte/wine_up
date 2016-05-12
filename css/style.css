@@ -104,9 +104,9 @@ div.home-block-text h3 {
   width: 300px;
   color: #ffffff;
   margin: 10px;
-  color: #ffffff;
 
 }
+
 .food-display img {
   height: 200px;
   width: 250px;
@@ -114,4 +114,21 @@ div.home-block-text h3 {
   padding: .05em;
   margin-top: .0.5em;
   display: block;
+}
+
+.wine-display {
+  float: left;
+  margin-left: 20px;
+  margin-top: 50px;
+  height: 250px;
+  width: 300px;
+
+}
+
+.wine-display img {
+  height: 20vw;
+  width: auto;
+  margin: auto;
+  padding: .05em;
+  margin-top: .0.5em;
 }
