@@ -4,7 +4,7 @@
 
 <img ng-src="{{showVm.food.photo_url}}" alt="" />
 
-<li ng-repeat="goat in showVm.food.winetypes">
-  {{goat.typeofwine}}
-  <img ng-src="{{goat.graphic_url}}" alt="" />
+<li ng-repeat="typesofwine in showVm.food.winetypes">
+  {{typesofwine.typeofwine}}
+  <img ng-src="{{typesofwine.graphic_url}}" alt="" />
 </li>
