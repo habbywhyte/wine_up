@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+<a data-ui-sref='foodHome'>Foods</a>
+
+
+<h2> The best wine pairing for {{showVm.food.name}}</h2>
+<div class="wine-display">
+<div data-ng-repeat="typesofwine in showVm.food.winetypes">
+
+  <img ng-src="{{typesofwine.graphic_url}}" alt="" />
+  <h3>{{typesofwine.typeofwine}}</h3>
+</div>
+<div>
+=======
 <a data-ui-sref='foodHome'>All Foods</a>
 
 <h2>{{showVm.food.name}} was your chosen food.</h2>
@@ -8,3 +21,4 @@
   {{typesofwine.typeofwine}}
   <img ng-src="{{typesofwine.graphic_url}}" alt="" />
 </li>
+>>>>>>> master

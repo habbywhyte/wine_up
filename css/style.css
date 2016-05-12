@@ -94,5 +94,41 @@ div.home-block-text h3 {
   filter: alpha(opacity=100);
   opacity: 1;
   position: relative;
+}
 
+.food-display {
+  float: left;
+  display: block;
+  background-color: #202326;
+  height: 250px;
+  width: 300px;
+  color: #ffffff;
+  margin: 10px;
+
+}
+
+.food-display img {
+  height: 200px;
+  width: 250px;
+  margin: auto;
+  padding: .05em;
+  margin-top: .0.5em;
+  display: block;
+}
+
+.wine-display {
+  float: left;
+  margin-left: 20px;
+  margin-top: 50px;
+  height: 250px;
+  width: 300px;
+
+}
+
+.wine-display img {
+  height: 20vw;
+  width: auto;
+  margin: auto;
+  padding: .05em;
+  margin-top: .0.5em;
 }
