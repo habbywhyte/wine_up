@@ -4,25 +4,22 @@
      <meta charset="UTF-8">
      <title>Wine Up</title>
 
+<!--angular -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
 
+<!--project script -->
      <script src="app/app.js"></script>
      <script src="app/foods/foods.module.js"></script>
      <script src="app/foods/food_index.controller.js"></script>
      <script src="app/foods/food_show.controller.js"></script>
      <script src="app/foods/foods.factory.js"></script>
-  <!-- </head> -->
+
 
  <!-- css file -->
  <link rel="stylesheet" href="css/style.css" />
  <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900|Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
-
-<!-- angular and angular route -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script> -->
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script> -->
 
 <!-- bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></script>
@@ -58,7 +55,9 @@
 <div class="container">
   <div class="row">
     <h1 class="section-heading">Find the perfect pairing by choosing your food item.</h1>
+    <div data-ui-view></div>
   </div>
+
 </div>
 </section>
 

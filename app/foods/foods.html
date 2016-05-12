@@ -1,9 +1,14 @@
+<!--When Wine Info is Visible -->
+  <div data-ng-show="showVm.foods.visible">
+    <div class="wine">
 
-hi foods.html
-{{4*4}}
+    </div>
+</div>
 
-<ul>
-  <li data-ng-repeat="food in indexVm.foods">
-    <a data-ui-sref="foodShow({id: food.id})">{{food.name}}</a>
-  </li>
-</ul>
+
+      <div class="food-box" data-ng-repeat="food in indexVm.foods">
+        <div class="food-display">
+          <img data-ng-src="{{ food.photo_url }}" alt="{{food.name}}" />
+          <a data-ui-sref="foodShow({id: food.id})">{{ food.name}}</a>
+        </div>
+      </div>
