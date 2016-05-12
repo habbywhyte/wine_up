@@ -2,7 +2,29 @@
 
 <h2>{{showVm.food.name}} was your chosen food.</h2>
 
-<h3>{{showVm.food.winetypes}} are the best wines.</h3>
+<!-- <h3>{{showVm.food.winetypes.typeofwine}} are the best wines.</h3> -->
+<!--
+<div ng-repeat="winetypes in showVM.food.winetypes">
+  <p>{{ winetypes.typeofwine }}</p>
+</div> -->
+<!--
+<div ng-repeat="wine in showVM.food.winetypes">
+  <p>{{ wine.typeofwine }} is a wine to show.</p>
+</div> -->
+
+<!-- <div ng-repeat="winetype in showVM.food.winetypes">
+  <p>{{ winetype.typeofwine }}</p>
+</div> -->
+
+<li ng-repeat="winetypes in showVm.food.winetypes">
+  <ul>
+    <li ng-repeat="typesofwine in winetypes.typesofwine">
+      {{showVm.food.winetypes.typesofwine}}
+    </li>
+  </ul>
+</li>
+
+
 <!--
 <div ng-repeat="winetypes in showVm.foods">
    <div ng-repeat="typesofwine in winetypes">
