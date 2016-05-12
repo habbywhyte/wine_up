@@ -9,7 +9,7 @@
     ])
 
     function FoodsFactoryFunction($resource) {
-      return $resource("http://localhost:3000/foods/:id");
+      return $resource("http://wine-up-api.herokuapp.com/foods/:id");
     }
 
 })();
