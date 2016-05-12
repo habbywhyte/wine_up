@@ -2,10 +2,37 @@
 
 <h2>{{showVm.food.name}} was your chosen food.</h2>
 
+<h3>{{showVm.food.winetypes}} are the best wines.</h3>
+<!--
+<div ng-repeat="winetypes in showVm.foods">
+   <div ng-repeat="typesofwine in winetypes">
+      {{winetypes.typesofwine}}
+      <b>Jobs:</b><br/>
+       <ul>
+         <li ng-repeat="job in day.jobs">
+           {{job.name}}
+         </li>
+       </ul>
+   </div>
+</div> -->
+
+
+<!-- the code below doesn't work and will likely get deleted. -->
+
+<!--
 <ul>
-  <li data-ng-repeat='winetypes in showVm.winetype'>
-    {{showVm.winetype}}
+  <li data-ng-repeat="food in indexVm.foods">
+    <a data-ui-sref="foodShow({id:food.id})">{{food.name}}</a>
+    <img src="{{food.photo_url}}" />
   </li>
 </ul>
+ -->
+<!--
+
+<ul data-ng-repeat="winetypes in showVm.food.name">
+  <li>
+    {{food.winetypes.typesofwine}}
+  </li>
+</ul> -->
 
 <!-- <h3>{{showVm.food.winetypes[]}} are good wines.</h3> -->
