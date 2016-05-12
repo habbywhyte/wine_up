@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <a data-ui-sref='foodHome'>Foods</a>
 
 
@@ -9,3 +10,15 @@
   <h3>{{typesofwine.typeofwine}}</h3>
 </div>
 <div>
+=======
+<a data-ui-sref='foodHome'>All Foods</a>
+
+<h2>{{showVm.food.name}} was your chosen food.</h2>
+
+<img ng-src="{{showVm.food.photo_url}}" alt="" />
+
+<li ng-repeat="typesofwine in showVm.food.winetypes">
+  {{typesofwine.typeofwine}}
+  <img ng-src="{{typesofwine.graphic_url}}" alt="" />
+</li>
+>>>>>>> master

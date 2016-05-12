@@ -1,9 +1,18 @@
 
 <h1 class="section-heading">Find the perfect pairing by choosing your food item.</h1>
 
+<<<<<<< HEAD
       <div class="food-box" data-ng-repeat="food in indexVm.foods">
         <div class="food-display">
           <img data-ng-src="{{ food.photo_url }}" alt="{{food.name}}" />
           <a data-ui-sref="foodShow({id: food.id})">{{ food.name}}</a>
         </div>
       </div>
+=======
+<ul>
+  <li data-ng-repeat="food in indexVm.foods">
+    <a data-ui-sref="foodShow({id:food.id})">{{food.name}}</a>
+    <img src="{{food.photo_url}}" />
+  </li>
+</ul>
+>>>>>>> master
