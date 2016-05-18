@@ -26,6 +26,7 @@
       })
 }
 
-
+// You guys have some crazy indentation going on in here
+// You're mixing the use of double quotes and single quotes. Pick one and use it for everything.
 
   })();

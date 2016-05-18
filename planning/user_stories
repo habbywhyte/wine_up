@@ -21,3 +21,6 @@ click on a wine and see where it can be purchased
 to sign in
 save wine pairing options
 add food
+
+
+I think pseudocoding would have really helped you guys here. In particular, something extremely helpful is to write out what you think your series of commits will be: "Boilerplate HTML"; "Added Angular"; "Added basic routes"; "Added index controller"... and so on.
