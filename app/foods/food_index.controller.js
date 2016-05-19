@@ -14,6 +14,7 @@
 
         this.clicker = function(foodName) {
           console.log(foodName);
+          // Make sure you remove or comment out nonfunctional code before code reviews
         };
 
       }

@@ -25,7 +25,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></script>
 
 </head>
-
+<!-- You should almost definitely have only one ng-app, for "wine_up". The only situation in which you have multiple is when you have multiple unrelated Angular apps running on one page (e.g. maybe a calculator and a weather widget, or something). -->
 <body data-ng-app='food'>
 
   <!-- NAVIGATION -->
@@ -34,8 +34,10 @@
         <a class="navbar-brand" style="font-family: 'Cinzel Decorative', cursive; font-size: 30px; color: #b30000" data-ui-sref="indexVm">Wine Up</a>
     </div>
     <ul class="nav navbar-nav navbar-right" style="font-family: 'Josefin Sans', sans-serif; font-size: 20px; color: #ffffff; margin-right: 30px">
+      <!-- Inline CSS! (ง'̀-'́)ง -->
         <li><a data-ui-sref="indexVm">Home</a></li>
         <li><a data-ui-sref="showVm">Food</a></li>
+        <!-- ui-sref refers to what's in `.state` ("foodHome" and "foodShow" for your app) and NOT the name of a controller -->
     </ul>
   </nav>
 
